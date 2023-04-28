@@ -5,7 +5,11 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login, logout
 
 def homepage(request):
+<<<<<<< HEAD
     """
+=======
+    """ 
+>>>>>>> container
     Renders the 'homepage.html' template. No input parameters are required.
     """
     return render(request, 'homepage.html')
@@ -73,7 +77,12 @@ def login_view(request):
 
 def logout_view(request):
     """
+<<<<<<< HEAD
      Logs the user out and redirects to the homepage.
      """
+=======
+    Logs the user out and redirects to the homepage.
+    """
+>>>>>>> container
     logout(request)
     return redirect('home')

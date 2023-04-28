@@ -4,6 +4,10 @@ from django.db import models
 class Album(models.Model):
     """
     A model class representing an album.
+<<<<<<< HEAD
+=======
+
+>>>>>>> container
     Attributes:
     title (str): The title of the album.
     release_date (date): The date the album was released.
@@ -11,6 +15,10 @@ class Album(models.Model):
 
     Methods:
     __str__(): Returns the title of the album as a string.
+<<<<<<< HEAD
+=======
+
+>>>>>>> container
     """
     title = models.CharField(max_length=100)
     release_date = models.DateField()

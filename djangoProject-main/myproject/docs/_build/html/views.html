@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; myproject 00.00.001 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="models.html" />
+    <link rel="prev" title="Welcome to myproject’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-myapp.views"></span><dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.album_list">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">album_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#album_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.album_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the database for all albums, orders them by release date, and renders the ‘album_list.html’ template with the list of albums passed as context data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.band_history">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">band_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#band_history"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.band_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the database for all band history events and renders the ‘band_history.html’ template with the list of events passed as context data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.band_members">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">band_members</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#band_members"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.band_members" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the database for all band members, orders them by year joined (if available), and renders the ‘band_members.html’ template with the list of members passed as context data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.homepage">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">homepage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#homepage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.homepage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the ‘homepage.html’ template. No input parameters are required.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.login_view">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">login_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#login_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.login_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the ‘login.html’ template. If the request method is POST, it attempts to authenticate the user with the provided credentials. If successful, logs the user in, displays a welcome message, and redirects to the homepage. If unsuccessful, displays an error message.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.logout_view">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">logout_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#logout_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.logout_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs the user out and redirects to the homepage.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.register">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#register"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the ‘register.html’ template with a UserCreationForm instance passed as context data. If the request method is POST, the view validates the form and creates a new user, logs the user in, and redirects to the homepage. If the form is invalid, it re-renders the form with the errors displayed.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapp.views.tour_list">
+<span class="sig-prename descclassname"><span class="pre">myapp.views.</span></span><span class="sig-name descname"><span class="pre">tour_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myapp/views.html#tour_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myapp.views.tour_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the database for all tours and renders the ‘tour_list.html’ template with the list of tours passed as context data.</p>
+</dd></dl>
+
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">myproject</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">album_list()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#myapp.views.band_history"><code class="docutils literal notranslate"><span class="pre">band_history()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#myapp.views.band_members"><code class="docutils literal notranslate"><span class="pre">band_members()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#myapp.views.homepage"><code class="docutils literal notranslate"><span class="pre">homepage()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#myapp.views.login_view"><code class="docutils literal notranslate"><span class="pre">login_view()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#myapp.views.logout_view"><code class="docutils literal notranslate"><span class="pre">logout_view()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#myapp.views.register"><code class="docutils literal notranslate"><span class="pre">register()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#myapp.views.tour_list"><code class="docutils literal notranslate"><span class="pre">tour_list()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html"><code class="docutils literal notranslate"><span class="pre">Album</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html#myapp.models.BandHistory"><code class="docutils literal notranslate"><span class="pre">BandHistory</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html#myapp.models.BandMember"><code class="docutils literal notranslate"><span class="pre">BandMember</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html#myapp.models.Tour"><code class="docutils literal notranslate"><span class="pre">Tour</span></code></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to myproject’s documentation!</a></li>
+      <li>Next: <a href="models.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Demetris.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/views.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
